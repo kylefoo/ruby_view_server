@@ -2,5 +2,15 @@
 <p>
 <% x="Kyle" %>
 <%= "This is #{x} trying to create view" %>
+<% y=["male", 26, "sinlge", "employed"] %>
+
+<ul>
+	<% y.each do |detail| %>
+	<li>
+		Details is <%= detail %>
+	</li>
+	<% end %>
+</ul>
+
 </p>
 </html>
