@@ -1,9 +1,9 @@
 require 'erb'
 require 'webrick'
 
-root = File.expand_path 'public'
+root = File.expand_path '~/ruby_view_server/public'
 
-server = WEBrick::HTTPServer.new :Port => 8000, :DocumentRoot => root
+server = WEBrick::HTTPServer.new :Port => 8010, :BindAddress => '192.168.0.102', :DocumentRoot => root
 
 ## ===========
 def process_erb(string, req = nil)
